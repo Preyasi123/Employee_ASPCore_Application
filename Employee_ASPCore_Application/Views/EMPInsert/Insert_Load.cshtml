@@ -1,0 +1,25 @@
+﻿
+@model Employee_ASPCore_Application.Models.Employee
+
+<form asp-action="Insert_click" class="form-horizondal">
+    <div class="form-group">
+        <label class="control-label">Employee Name</label>
+        <input asp-for="ename" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label class="control-label">Employee Age</label>
+        <input asp-for="eage" class="form-control" />
+    </div>
+  
+    <div class="form-group">
+        <input type="submit" value="Insert" class="btn btn-success" />
+    </div>
+</form>
+@* @{
+    if (@TempData["msg"] != null)
+    {
+        <script>
+            alert('@TempData["msg"]');
+        </script>
+    }
+} *@
