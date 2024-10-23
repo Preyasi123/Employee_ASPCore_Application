@@ -29,7 +29,7 @@ namespace Employee_ASPCore_Application.Models
                 return ex.Message.ToString();
             }
         }
-
+        //select all details as list
         public List<Employee> SelectDB()
         {
             var list = new List<Employee>();
